@@ -1,0 +1,32 @@
+# === GİZLİ DOSYALAR (Asla GitHub'a yükleme!) ===
+.env
+
+# === VERİTABANLARI ===
+*.db
+*.sqlite
+*.sqlite3
+
+# === LOGLAR ===
+*.log
+
+# === PYTHON ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# === TEST CACHE ===
+.pytest_cache/
+.coverage
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp

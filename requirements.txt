@@ -1,0 +1,7 @@
+PyQt6
+requests
+python-dotenv
+google-genai
+jsonschema
+bcrypt
+pytest

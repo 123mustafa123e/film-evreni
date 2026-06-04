@@ -1,0 +1,31 @@
+Film Evreni - EXE Kullanım Rehberi
+
+1) EXE dosyasını çalıştırma
+
+- EXE dosyasını çift tıklayarak açın.
+- Eğer Windows güvenlik uyarısı gösterirse, "Daha fazla bilgi" veya "Yine de çalıştır" seçeneğine tıklayın.
+- Uygulama açılmazsa, EXE dosyasını sağ tıklayıp "Yönetici olarak çalıştır" seçmeyi deneyin.
+
+2) Giriş / Kayıt ekranı
+
+- Uygulama açıldığında önce bir giriş/kayıt ekranı görürsünüz.
+- Daha önce kayıtlı değilseniz "Hesabın yok mu? Kayıt Ol" düğmesine tıklayın.
+- Ad Soyad, Kullanıcı Adı ve Şifre alanlarını doldurup "Kayıt Ol" düğmesine basın.
+- Zaten hesabınız varsa, Kullanıcı Adı ve Şifre bilgilerinizi girip "Giriş Yap" düğmesine basın.
+
+3) Uygulamada kullanabileceğiniz genel bilgiler
+
+- Uygulama TMDB film veritabanını kullanarak film arama ve öneri sunar.
+- Kullanıcı hesabınız kaydedildikten sonra uygulama içinde izleme geçmişi ve film listesi gibi temel özellikler çalışır.
+- Eğer uygulama bir API anahtarı isterse veya film araması yapmıyorsa, bunun nedeni paketleme sırasında gerekli .env dosyasının veya TMDB API anahtarının uygulamaya dahil edilmemiş olması olabilir.
+
+4) Sorun yaşarsanız
+
+- Uygulama açılmıyorsa, dosya aynı klasördeki diğer gerekli dosyalarla birlikte mi kontrol edin. PyInstaller ile paketlenmiş uygulamalarda genellikle "dist" klasörü veya aynı dizinde ek kaynak dosyaları bulunur.
+- Windows Defender veya antivirüs programı çalışmayı engelliyorsa, geçici olarak izin verin.
+- Hala sorun devam ederse, uygulamayı bir terminalde açarak hata mesajına bakmak yardımcı olabilir.
+
+5) Ek not
+
+- Bu uygulama Python ile yazılmıştır. Eğer EXE dışında doğrudan kodu çalıştırmak isterseniz, Python 3.10+ yüklü bilgisayarda proje klasöründe "python main.py" komutunu kullanabilirsiniz.
+- Uygulama veritabanı dosyası olarak "users.db" oluşturur ve kullanıcı hesaplarını burada saklar.
