@@ -18,12 +18,6 @@ load_dotenv()
 # --- Gemini Ayarları ---
 GEMINI_MODEL = "gemini-2.5-flash"
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY")
-if not GEMINI_API_KEY:
-    import base64
-    try:
-        GEMINI_API_KEY = base64.b64decode("QVEuQWI4Uk42S0M0el85cXpGWXFscjIzNFdCcTRJVGV2VV95RkZvS2pIUHJsQkRhOVU4QWc=").decode("utf-8")
-    except Exception:
-        pass
 
 if not GEMINI_API_KEY:
     logging.warning("GEMINI_API_KEY bulunamadı, AI özellikleri devre dışı bırakılacak.")

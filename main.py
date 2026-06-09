@@ -23,13 +23,7 @@ logging.basicConfig(filename="app.log", level=logging.INFO,
                     format="%(asctime)s %(levelname)s:%(message)s")
 
 # --- AYARLAR ---
-import base64
 API_KEY = os.getenv("TMDB_API_KEY")
-if not API_KEY:
-    try:
-        API_KEY = base64.b64decode("YzJmMGNkN2YwNTQ3YjBlM2IzYTFkYjFhZmIzODI2YjM=").decode("utf-8")
-    except Exception:
-        API_KEY = ""
 BASE_URL = "https://api.themoviedb.org/3"
 IMAGE_URL = "https://image.tmdb.org/t/p/w500"
 
